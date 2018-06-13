@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+header {
+  background: #000;
+  text-align: center;
+  color: #fff;
+}
+
+.logo {
+  color: #fff;
+  font-size: 40px;
+}
+
+header input {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.active {
+  background: green;
+}
+
+.non-active {
+  background: red;
+}

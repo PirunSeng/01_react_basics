@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Hello!",
+    "feed": "World!"
+  },
+  {
+    "id": 2,
+    "title": "Hi!",
+    "feed": "There!"
+  },
+  {
+    "id": 3,
+    "title": "Sursdey!",
+    "feed": "Everyone!"
+  }
+]
