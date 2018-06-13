@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import '../css/styles.css'
+// import React, { Component } from 'react';
+import React from 'react';
+import classes from '../css/styles.css';
 
 // const getYear = () => {
 //   const newDate = new Date();
@@ -12,36 +13,46 @@ import '../css/styles.css'
 //   gender: 'Male',
 // }
 
-class Header extends Component {
-  constructor (){
-    super()
-    this.state = {
-      // active: 'non-active',
-      keywords: ''
-    }
-  }
+// class Header extends Component {
+//   // constructor (){
+//   //   super()
+//   //   this.state = {
+//   //     // active: 'non-active',
+//   //     keywords: ''
+//   //   }
+//   // }
+//   //
+//   // inputChangeHandler = (event) => {
+//   //   // const value = event.target.value === '' ? 'non-active' : 'active'
+//   //   this.setState({
+//   //     // active: value,
+//   //     keywords: event.target.value
+//   //   })
+//   // }
+//
+//   render(){
+//     return (
+//       // <header style={{background: `${this.state.active ? 'green' : 'red'}`}}>
+//       // <header className={this.state.active}>
+//       <header>
+//         <div className={classes.logo}>Logo</div>
+//         <input
+//           type='text'
+//           onChange={this.props.keywords}/>
+//       </header>
+//     )
+//   }
+// }
 
-  inputChangeHandler = (event) => {
-    // const value = event.target.value === '' ? 'non-active' : 'active'
-    this.setState({
-      // active: value,
-      keywords: event.target.value
-    })
-  }
-
-  render(){
-
-    return (
-      // <header style={{background: `${this.state.active ? 'green' : 'red'}`}}>
-      // <header className={this.state.active}>
-      <header>
-        <div className='logo'>Logo: </div>
-        <input
-          type='text'
-          onChange={ this.inputChangeHandler}/>
-      </header>
-    )
-  }
+const Header = (props) => {
+  return(
+    <header>
+      <div className={classes.logo}>Logo</div>
+      <input
+        type='text'
+        onChange={props.keywords}/>
+    </header>
+  )
 }
 
 export default Header;
